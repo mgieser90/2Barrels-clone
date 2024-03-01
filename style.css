@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "Lato", sans-serif;
+}
+
+hr {
+  width: 80px;
+  border-bottom: 5px solid #fff;
+  border-top: 0;
+  margin-top: -10px;
+}
+
+body {
+  margin: 0;
+}
+
+p,
+li {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #363636;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: #363636;
+}
+
+.job-link:hover {
+  cursor: pointer;
+  box-shadow: inset 0 400px 0 -1px #035, 0 7px 12px rgba(0, 0, 0, .2);
+  transition: .5s;
+}
+
+.job-link:hover i,
+.job-link:hover h3,
+.job-link:hover p {
+  color: #ffffff;
+}
+
+.job-link .answer {
+  display: none;
+}
+
+.job-link:hover .question {
+  display: none;
+}
+
+.job-link:hover .answer {
+  display: inline;
+}
+
+#scroll-trigger,
+#scroll-trigger2,
+#scroll-trigger3 {
+  display: none;
+}
+
+#scroll-trigger:checked+.job-link .question,
+#scroll-trigger2:checked+.job-link .question,
+#scroll-trigger3:checked+.job-link .question {
+  display: none;
+}
+
+#scroll-trigger:checked+.job-link .answer,
+#scroll-trigger2:checked+.job-link .answer,
+#scroll-trigger3:checked+.job-link .answer {
+  display: inline;
+}
+
+#scroll-trigger:checked+.job-link,
+#scroll-trigger2:checked+.job-link,
+#scroll-trigger3:checked+.job-link {
+  box-shadow: inset 0 400px 0 -1px #035, 0 7px 12px rgba(0, 0, 0, .2);
+  transition: .5s;
+}
+
+#scroll-trigger:checked+.job-link i,
+#scroll-trigger:checked+.job-link h3,
+#scroll-trigger:checked+.job-link p,
+#scroll-trigger2:checked+.job-link i,
+#scroll-trigger2:checked+.job-link h3,
+#scroll-trigger2:checked+.job-link p,
+#scroll-trigger3:checked+.job-link i,
+#scroll-trigger3:checked+.job-link h3,
+#scroll-trigger3:checked+.job-link p {
+  color: #ffffff;
+}
+
+address p {
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+button {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 3px;
+}
+
+#resume-menu {
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+#resume-link {
+  background-color: #f26823;
+  color: #ffffff;
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #05121a;
+  background-image: url(https://www.twobarrels.com/wp-content/themes/two-barrels/assets/img/tboverlay4.png);
+  background-size: 300px;
+  background-position: -100px bottom;
+  background-repeat: no-repeat;
+  min-height: 150px;
+}
+
+.logo-img {
+  margin-bottom: 10px;
+  transform: scale(0.35);
+  overflow: visible;
+  margin-top: -20px;
+  margin-left: -30px;
+}
+
+.office-name {
+  color: #f26823
+}
+
+#mission-statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 546px;
+  background-image: url(https://www.twobarrels.com/wp-content/themes/two-barrels/assets/img/2B-buliding-v5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  color: #fff;
+  padding: 145px 1em 0 1em;
+}
+
+#mission-statement h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  font-style: normal;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+#mission-statement h4 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+#empty-div {
+  width: 100%;
+  height: 95px;
+  background-color: none;
+}
+
+#upper-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+}
+
+#about-section {
+  margin: 50px 34px 100px 34px;
+}
+
+#more-about-section {
+  margin: 70px 18px 0px 18px;
+}
+
+#about-section h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#lower-section h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#contact-section {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 35px;
+}
+
+#contact-section h3 {
+  letter-spacing: .6px;
+  line-height: 1.6;
+}
+
+.job-link {
+  border-top: 3px solid #003355;
+  background-color: #ffffff;
+  margin: 10px 34px;
+  padding: 30px 30px 20px 30px;
+}
+
+.job-link h3 {
+  color: #003355;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.material-icons {
+  position: relative;
+  color: #003355;
+  top: 5px;
+  margin-top: 15px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+  ;
+}
+
+/*Fonts
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} 
+
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+*/
