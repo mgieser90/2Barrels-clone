@@ -37,11 +37,17 @@ window.addEventListener('scroll', function () {
   }
 });
 
-document.getElementById('resume-menu').addEventListener('click', function () {
+document.addEventListener('DOMContentLoaded', function () {
   const navBar = document.getElementById('click-trigger');
-  if (navBar.style.left === '-275px') {
-    navBar.style.left = '0';
-  } else {
-    navBar.style.left = '-275px';
-  }
+  const resumeMenuButton = document.getElementById('resume-menu');
+
+  navBar.style.left = '-275px'; // Set initial state to hidden
+
+  resumeMenuButton.addEventListener('click', function () {
+    if (navBar.style.left === '-275px') {
+      navBar.style.left = '0';
+    } else {
+      navBar.style.left = '-275px';
+    }
+  });
 });
