@@ -107,7 +107,7 @@ button {
   border-radius: 3px;
 }
 
-nav {
+#click-trigger {
   display: flex;
   position: fixed;
   background-color: #05121a;
@@ -118,7 +118,7 @@ nav {
   border-right: 1px solid #ccc;
 }
 
-nav a {
+#click-trigger a {
   text-decoration: none;
   color: #f0f0f0;
   font-family: "raleway", sans-serif;
@@ -126,13 +126,13 @@ nav a {
   margin-left: 30px;
 }
 
-nav ul {
+#click-trigger ul {
   margin: 0;
   padding: 0;
   width:100%;
 }
 
-nav li {
+#click-trigger li {
   border-bottom: 1px solid #ccc;
   list-style-type: none;
   margin: 0;
