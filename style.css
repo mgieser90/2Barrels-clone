@@ -111,7 +111,7 @@ nav {
   display: flex;
   position: fixed;
   background-color: #05121a;
-  left: 0;
+  left: -275px;
   height: 100%;
   width: 275px;
   z-index: 101;
