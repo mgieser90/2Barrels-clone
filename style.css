@@ -115,7 +115,7 @@ nav {
   height: 100%;
   width: 275px;
   z-index: 101;
-  border-right: 1px solid #f0f0f0;
+  border-right: 1px solid #ccc;
 }
 
 nav a {
@@ -133,7 +133,7 @@ nav ul {
 }
 
 nav li {
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   list-style-type: none;
   margin: 0;
   padding: 10px;
