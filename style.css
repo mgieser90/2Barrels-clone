@@ -107,10 +107,58 @@ button {
   border-radius: 3px;
 }
 
+nav {
+  display: flex;
+  position: fixed;
+  background-color: #05121a;
+  left: 0;
+  height: 100%;
+  width: 275px;
+  z-index: 101;
+  border-right: 1px solid #f0f0f0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-family: "raleway", sans-serif;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  width:100%;
+}
+
+nav li {
+  border: 1px solid #ccc;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.material-icons.nav {
+  color: #f0f0f0;
+  margin: 0;
+}
+
+#mobile-nav-exit {
+  position: fixed;
+  right: 0;
+  background-color: transparent;
+}
+
+/* #click-trigger {
+  display: none;
+} */
+
 #resume-menu {
   padding: 0px 20px 20px 20px;
   margin-bottom: 20px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 #resume-link {
@@ -240,7 +288,6 @@ button {
 
 .material-icons.md-48 {
   font-size: 48px;
-  ;
 }
 
 /*Fonts
