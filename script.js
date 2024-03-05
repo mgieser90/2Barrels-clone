@@ -4,10 +4,12 @@ window.addEventListener('scroll', function () {
 
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition > scrollThreshold && !scrollTrigger.checked) {
-    scrollTrigger.checked = true;
-  } else if (scrollPosition <= scrollThreshold && scrollTrigger.checked) {
-    scrollTrigger.checked = false;
+  if (window.innerWidth < 47.5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
+    if (scrollPosition > scrollThreshold && !scrollTrigger.checked) {
+      scrollTrigger.checked = true;
+    } else if (scrollPosition <= scrollThreshold && scrollTrigger.checked) {
+      scrollTrigger.checked = false;
+    }
   }
 });
 
@@ -17,10 +19,12 @@ window.addEventListener('scroll', function () {
 
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition > scrollThreshold && !scrollTrigger.checked) {
-    scrollTrigger.checked = true;
-  } else if (scrollPosition <= scrollThreshold && scrollTrigger.checked) {
-    scrollTrigger.checked = false;
+  if (window.innerWidth < 47.5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
+    if (scrollPosition > scrollThreshold && !scrollTrigger.checked) {
+      scrollTrigger.checked = true;
+    } else if (scrollPosition <= scrollThreshold && scrollTrigger.checked) {
+      scrollTrigger.checked = false;
+    }
   }
 });
 
@@ -30,10 +34,12 @@ window.addEventListener('scroll', function () {
 
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition > scrollThreshold && !scrollTrigger.checked) {
-    scrollTrigger.checked = true;
-  } else if (scrollPosition <= scrollThreshold && scrollTrigger.checked) {
-    scrollTrigger.checked = false;
+  if (window.innerWidth < 47.5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
+    if (scrollPosition > scrollThreshold && !scrollTrigger.checked) {
+      scrollTrigger.checked = true;
+    } else if (scrollPosition <= scrollThreshold && scrollTrigger.checked) {
+      scrollTrigger.checked = false;
+    }
   }
 });
 

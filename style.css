@@ -40,6 +40,7 @@ h3 {
 .job-link:hover i,
 .job-link:hover h3,
 .job-link:hover p {
+  cursor: pointer;
   color: #ffffff;
 }
 
@@ -147,6 +148,7 @@ button {
   margin: 0;
   padding: 0;
   width: 100%;
+  letter-spacing: 1px;
 }
 
 #click-trigger a.current-menu-item,
@@ -190,10 +192,6 @@ button {
   color: red;
   cursor: pointer;
 }
-
-/* #click-trigger {
-  display: none;
-} */
 
 #resume-menu {
   padding: 0px 20px 20px 20px;
@@ -332,34 +330,81 @@ button {
   margin: 0;
 }
 
-/*Fonts
+@media screen and (min-width: 47.5em) {
+  p, li {
+    font-size: 19px;
+    line-height: 30px;
+  }
 
-.lato-light {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  #lower-section h4  {
+    font-size: 2rem;
+  }
+  .page-content {
+    padding-left: 260px;
+  }
+
+  .header {
+    position: fixed;
+    width: 260px;
+    height: 100%;
+
+  }
+
+  .logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  #resume-menu {
+    display:none;
+  }
+
+  #click-trigger {
+    left: 0px;
+    position: static;
+    width: 260px;
+    border: 0;
+    background-image: url(https://www.twobarrels.com/wp-content/themes/two-barrels/assets/img/tboverlay4.png);
+    background-repeat: no-repeat;
+    background-size: 660px;
+    background-position: -200px bottom;
+  }
+  
+  #click-trigger li {
+    border: 0;
+  }
+
+  #mission-statement {
+    min-height: 475px;
+    padding-top: 100px;
+  }
+
+  #hire-me {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@media screen and (min-width: 62.5em) {
+  #mission-statement h1 {
+    font-size: 3rem;
+  }
+
+  #responses {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .job-link {
+    margin: .8em;
+    flex: auto;
+    padding: 1em;
+  }
+
+  #about-section h3,
+  #more-about-section h3 {
+    font-size: 2.5rem;
+  }
 }
-
-.lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-} 
-
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
-
-.raleway-bold {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
-
-*/
