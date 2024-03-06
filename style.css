@@ -207,6 +207,10 @@ button {
   margin-bottom: 100px;
 }
 
+#resume-link:hover {
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -331,14 +335,17 @@ button {
 }
 
 @media screen and (min-width: 47.5em) {
-  p, li {
+
+  p,
+  li {
     font-size: 19px;
     line-height: 30px;
   }
 
-  #lower-section h4  {
+  #lower-section h4 {
     font-size: 2rem;
   }
+
   .page-content {
     padding-left: 260px;
   }
@@ -356,7 +363,7 @@ button {
   }
 
   #resume-menu {
-    display:none;
+    display: none;
   }
 
   #click-trigger {
@@ -369,7 +376,7 @@ button {
     background-size: 660px;
     background-position: -200px bottom;
   }
-  
+
   #click-trigger li {
     border: 0;
   }
