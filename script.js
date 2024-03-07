@@ -73,35 +73,43 @@ document.addEventListener('DOMContentLoaded', function () {
     contactExit.style.display = 'none';
   }
 
-  hideNav(); // Initially hide the navigation elements
-  hideContact(); // Initially hide the contact elements
+  hideNav(); 
+  hideContact(); 
 
   resumeMenuButton.addEventListener('click', function () {
-    hideContact(); // Hide contact elements when opening the navigation
+    hideContact(); 
     if (navBar.style.left === '-275px') {
       navBar.style.left = '0';
       mobileNavBackground.style.display = 'block';
       navExit.style.right = '10px';
     } else {
-      hideNav(); // Hide navigation when closing
+      hideNav(); 
     }
   });
 
+  mobileNavBackground.addEventListener('click', function () {
+    hideNav();
+  });
+
+  navExit.addEventListener('click', function () {
+    hideNav();
+  });
+
   contactMeLink.addEventListener('click', function (event) {
-    showContact(); // Show contact elements
+    showContact(); 
   });
 
   contactMeButton.addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent the default behavior of the anchor element
-    hideNav(); // Hide navigation when opening contact elements
-    showContact(); // Show contact elements
+    event.preventDefault(); 
+    hideNav(); 
+    showContact(); 
   });
 
   contactMeBackground.addEventListener('click', function () {
-    hideContact(); // Hide contact elements when clicking background
+    hideContact();
   });
 
   contactExit.addEventListener('click', function () {
-    hideContact(); // Hide contact elements when clicking exit button
+    hideContact();
   });
 });
